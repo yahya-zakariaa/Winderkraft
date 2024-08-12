@@ -845,6 +845,11 @@ video {
   padding: 0px;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -868,6 +873,16 @@ video {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .pb-1 {
@@ -916,6 +931,34 @@ video {
 
 .text-\[45px\] {
   font-size: 45px;
+}
+
+.text-\[44px\] {
+  font-size: 44px;
+}
+
+.text-\[43px\] {
+  font-size: 43px;
+}
+
+.text-\[42px\] {
+  font-size: 42px;
+}
+
+.text-\[41px\] {
+  font-size: 41px;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
+}
+
+.text-\[48px\] {
+  font-size: 48px;
+}
+
+.text-\[47px\] {
+  font-size: 47px;
 }
 
 .font-bold {
