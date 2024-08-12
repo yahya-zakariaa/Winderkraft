@@ -746,6 +746,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -990,16 +994,12 @@ video {
     width: 230px;
   }
 
-  .lg\:max-w-\[75\%\] {
-    max-width: 75%;
+  .lg\:max-w-\[70\%\] {
+    max-width: 70%;
   }
 
   .lg\:max-w-\[90\%\] {
     max-width: 90%;
-  }
-
-  .lg\:max-w-\[70\%\] {
-    max-width: 70%;
   }
 
   .lg\:flex-row {
