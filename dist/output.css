@@ -998,6 +998,10 @@ video {
     max-width: 90%;
   }
 
+  .lg\:max-w-\[70\%\] {
+    max-width: 70%;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
