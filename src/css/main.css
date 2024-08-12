@@ -1,0 +1,52 @@
+/* utilits */
+.container {
+  width: 90% !important;
+  margin: auto !important;
+  max-width: 1200px !important;
+}
+/* variables */
+:root {
+  --gradient-color-1: #7186ff;
+  --gradient-color-2: #fe7587;
+}
+
+/* navbar */
+.nav-active{
+  background: #1f0d2157;
+  backdrop-filter: blur(20px);
+}
+/* saidbar  */
+
+.manu {
+  backdrop-filter: blur(20px);
+}
+
+.manu-active {
+  margin-right: 0%;
+}
+/* home section */
+.hero-section {
+  min-height: 100vh;
+  max-height: auto;
+  background-image: url("../assets/hero-bg.webp");
+  background-size: 700px;
+
+  filter: brightn;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero-content h1 {
+  line-height: 1.2;
+}
+.hero-content p {
+  line-height: 1.8;
+}
+.hero-gradient-title {
+  background: linear-gradient(
+    to right,
+    var(--gradient-color-1),
+    var(--gradient-color-2)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

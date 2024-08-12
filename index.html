@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="src/css/main.css" />
+    <title>Home</title>
+  </head>
+  <body class="p-0 m-0">
+    <nav
+      class="navbar transition-all duration-300 z-[9999] w-full bg-transparent h-fit  fixed top-0 left-0 right-0">
+      <div
+        class="container h-full py-6 flex justify-between items-center text-white">
+        <a href="#" class="logo text-[27px] font-bold text-white ">logo</a>
+        <button class="lg:hidden toggle-menu transition-all duration-300">
+          <i class="fa-solid fa-bars-staggered text-[24px]"></i>
+        </button>
+        <ul class="menu lg:flex hidden justify-between items-center gap-4">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <aside
+      class="sidebar w-full transition-all duration-500 mx-[-100%] fixed bottom-0 right-0 h-[89vh] z-[999]">
+      <div
+        class="manu border border-gray-800 absolute bottom-0 right-0 bg-black bg-opacity-60 pb-10 pt-2 z-[1000] rounded-l-xl w-[300px] h-full flex flex-col justify-between items-center">
+        <ul class="menu flex justify-between flex-col items-center w-full">
+          <li
+            class="border-b transition-all duration-300 cursor-pointer border-gray-800 w-full text-left px-5 py-3 hover:bg-[#2d0241]">
+            <a href="#" class="font-semibold text-white text-[20px]">Home</a>
+          </li>
+          <li
+            class="border-b transition-all duration-300 cursor-pointer border-gray-800 w-full text-left px-5 py-3 hover:bg-[#2d0241]">
+            <a href="#" class="font-semibold text-white text-[20px]"
+              >Customer</a
+            >
+          </li>
+          <li
+            class="border-b transition-all duration-300 cursor-pointer border-gray-800 w-full text-left px-5 py-3 hover:bg-[#2d0241]">
+            <a href="#" class="font-semibold text-white text-[20px]">Insight</a>
+          </li>
+          <li
+            class="border-b transition-all duration-300 cursor-pointer border-gray-800 w-full text-left px-5 py-3 hover:bg-[#2d0241]">
+            <a href="#" class="font-semibold text-white text-[20px]">Pricing</a>
+          </li>
+          <li class="w-full text-left px-5 py-3 hover:bg-[#2d0241]">
+            <a href="#" class="font-semibold text-white text-[20px]"
+              >Changelog</a
+            >
+          </li>
+        </ul>
+        <div class="btn-group w-full flex flex-col items-center gap-4">
+          <button
+            class="bg-[#2d0241] transition-all duration-300 border-2 border-[#2d0241] hover:bg-transparent hover:border-2 hover:border-[#2d0241] w-[80%] py-2 rounded-md text-white font-semibold text-[18px]">
+            Get Started
+          </button>
+          <button
+            class="bg-[#c45e6c] transition-all duration-300 border-2 border-[#c05e6b] hover:bg-transparent hover:border-2 hover:border-[#c05e6b] w-[80%] py-2 rounded-md text-white font-semibold text-[18px]">
+            Sign up
+          </button>
+        </div>
+      </div>
+    </aside>
+    <div class="hero-section pt-[110px] bg-[#141219] relative pb-1">
+      <div
+        class="hero-layer z-1 absolute top-0 left-0 w-full h-full bg-[#141219b3]"></div>
+      <div class="container relative z-20">
+        <div class="hero-content px-9 lg:max-w-[90%] mx-auto">
+          <h1
+            class="text-[50px] lg:text-[60px] lg:mt-10 font-bold text-center text-white">
+            Transform customer feedback into <br />
+            <span class="hero-gradient-title"> product growth with AI</span>
+          </h1>
+          <p
+            class="text-[18px] lg:text-[20px] lg:max-w-[75%] mx-auto text-center font-normal text-white mt-[30px]">
+            All customer feedback unified automatically and categorized
+            accurately to empower product orgs to prioritize and build what
+            matters.
+          </p>
+        </div>
+        <div class="hero-btn-group flex justify-center my-12 gap-5">
+          <a
+            href="#"
+            class="overflow-hidden hover:[&>div]:w-[85%] bg-gradient-to-r group from-[#7186ff] to-[#fe7587] flex items-center justify-center text-white w-[190px] h-[50px] rounded-full"
+            ><div
+              class="flex transition-all duration-300 items-center justify-center font-semibold w-[95%] text-[19px] h-[85%] bg-[#110218] rounded-full">
+              Book a Demo
+            </div></a
+          >
+          <a
+            href="#"
+            class="overflow-hidden bg-gradient-to-r hover:[&>div]:w-[85%] from-[#7186ff] to-[#fe7587] flex items-center justify-center text-white w-[250px] h-[50px] rounded-full"
+            ><div
+              class="flex items-center transition-all duration-300 justify-center font-semibold w-[95%] text-[19px] h-[85%] bg-[#110218] rounded-full">
+              Take Product Tour
+            </div></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="src/js/main.js"></script>
+  </body>
+</html>
