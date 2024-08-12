@@ -861,6 +861,16 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -907,6 +917,14 @@ video {
 
 .text-\[40px\] {
   font-size: 40px;
+}
+
+.text-\[44px\] {
+  font-size: 44px;
+}
+
+.text-\[45px\] {
+  font-size: 45px;
 }
 
 .font-bold {
