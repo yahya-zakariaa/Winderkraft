@@ -1,6 +1,21 @@
 const toggleMenu = document.querySelector(".toggle-menu");
 const manu = document.querySelector(".sidebar");
 const navbar = document.querySelector(".navbar");
+const swaiper = new Swiper(".swiper", {
+  slidesPerView: 3,
+  loop: true,
+  speed: 2000,
+
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+  centeredSlides: true,
+  spaceBetween: 100,
+  allowTouchMove: false,
+});
+
 // handel nav toggle
 toggleMenu.addEventListener("click", () => {
   console.log("hello");

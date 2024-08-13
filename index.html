@@ -9,16 +9,20 @@
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="dist/output.css" />
     <link rel="stylesheet" href="src/css/main.css" />
     <title>Home</title>
   </head>
-  <body class="p-0 m-0 overflow-x-hidden">
+  <body class="p-0 m-0 overflow-x-hidden bg-[#141219]">
+    <!-- navbar -->
     <nav
-      class="navbar transition-all duration-300 z-[9999] w-full bg-transparent h-fit overflow-hidden  fixed top-0 left-0 right-0">
+      class="navbar transition-all duration-300 z-[9999] w-full bg-transparent h-fit overflow-hidden fixed top-0 left-0 right-0 rounded-b-">
       <div
-        class="container h-full py-6 flex justify-between items-center text-white px-1">
-        <a href="#" class="logo text-[27px] font-bold text-white ">logo</a>
+        class="container h-full py-6 flex justify-between items-center text-white px-1 overflow-hidden">
+        <a href="#" class="logo text-[27px] font-bold text-white">logo</a>
         <button class="lg:hidden toggle-menu transition-all duration-300">
           <i class="fa-solid fa-bars-staggered text-[24px]"></i>
         </button>
@@ -30,6 +34,7 @@
         </ul>
       </div>
     </nav>
+    <!-- sidebar -->
     <aside
       class="sidebar w-full transition-all duration-500 mx-[-100%] fixed bottom-0 right-0 h-[83vh] z-[999]">
       <div
@@ -59,7 +64,8 @@
             >
           </li>
         </ul>
-        <div class="btn-group w-full flex flex-col items-center gap-4 overflow-hidden">
+        <div
+          class="btn-group w-full flex flex-col items-center gap-4 overflow-hidden">
           <button
             class="bg-[#2d0241] transition-all duration-300 border-2 border-[#2d0241] hover:bg-transparent hover:border-2 hover:border-[#2d0241] w-[80%] py-2 rounded-md text-white font-semibold text-[18px]">
             Login
@@ -71,11 +77,13 @@
         </div>
       </div>
     </aside>
-    <div class="hero-section overflow-hidden pt-[110px] bg-[#141219] relative pb-1 px-1">
+    <!-- hero section -->
+    <div class="hero-section pt-[110px] relative  px-1 overflow-hidden">
       <div
         class="hero-layer z-1 absolute top-0 left-0 w-full h-full bg-[#141219b3]"></div>
-      <div class="container relative z-20">
-        <div class="hero-content lg:px-9 lg:max-w-[90%] w-full mx-auto">
+      <div class="container relative h-full z-20 border-b border-gray-900 px-1 pb-1">
+        <div
+          class="hero-content lg:px-9 lg:max-w-[90%] w-full mx-auto overflow-hidden">
           <h1
             class="text-[48px] lg:text-[60px] lg:mt-10 font-bold text-center text-white">
             Transform customer feedback into <br />
@@ -88,7 +96,8 @@
             matters.
           </p>
         </div>
-        <div class="hero-btn-group w-full flex-col lg:flex-row flex items-center justify-center my-12 gap-5">
+        <div
+          class="hero-btn-group w-full flex-col lg:flex-row flex items-center justify-center my-12 gap-5 overflow-hidden">
           <a
             href="#"
             class="overflow-hidden hover:[&>div]:w-[85%] bg-gradient-to-r group from-[#7186ff] to-[#fe7587] flex items-center justify-center text-white w-[280px] lg:w-[230px] h-[50px] rounded-full"
@@ -102,13 +111,77 @@
             class="overflow-hidden bg-gradient-to-r hover:[&>div]:w-[85%] from-[#7186ff] to-[#fe7587] flex items-center justify-center text-white w-[280px] h-[50px] rounded-full"
             ><div
               class="flex gap-2 items-center transition-all duration-300 justify-center font-semibold w-[95%] text-[19px] h-[85%] bg-[#110218] rounded-full">
-              Take Product Tour <i class="fa-solid fa-angle-right mb-[-3px]"></i>
-            </div></a
-          >
+              Take Product Tour
+              <i class="fa-solid fa-angle-right mb-[-3px]"></i></div
+          ></a>
         </div>
       </div>
     </div>
-
+    <!-- slider section -->
+    <div class="slider-section">
+      <div class= "container-2  border-b border-gray-800 relative px-1 py-8 lg:w-[70%]">
+        <div class="slider w-full ">
+          <h1 class="text-center text-white text-[25px] font-bold mb-10">
+            Trusted By Top Companies
+          </h1>
+          <div class="swiper h-[200px] slider-container overflow-hidden">
+            <div class="swiper-wrapper items-center h-full">
+              <!-- Slides -->
+              <img
+                class="swiper-slide"
+                src="src/assets/slider-1.png"
+                alt="slider img" />
+              <img
+                class="swiper-slide"
+                src="src/assets/slider-2.svg"
+                alt="slider img" />
+              <img
+                class="swiper-slide"
+                src="src/assets/slider-3.webp"
+                alt="slider img" />
+              <img
+                class="swiper-slide"
+                src="src/assets/slider-4.webp"
+                alt="slider img" />
+              <img
+                class="swiper-slide"
+                src="src/assets/slider-6.webp"
+                alt="slider img" />
+              <img
+                class="swiper-slide"
+                src="src/assets/slider-7.svg"
+                alt="slider img" />
+              <img
+                class="swiper-slide"
+                src="src/assets/slider-8.svg"
+                alt="slider img" />
+              <img
+                class="swiper-slide"
+                src="src/assets/slider-9.svg"
+                alt="slider img" />
+              <img
+                class="swiper-slide"
+                src="src/assets/slider-10.svg"
+                alt="slider img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Ad-section">
+      <div class="container-2 py-16 border-b border-gray-800">
+        <div class="card-cta relative ps-7">
+          <p class="text-fill latter-space-1 bg-gradient-to-r to-[85%]  from-[#7186ff] to-[#141219] font-medium uppercase text-[15px] lg:text-[17px] mb-[2px] line-height-8 ">The Enterpret Advantage</p>
+          <p class="text-white text-[20px] line-height-8 font-[300] lg:text-[28px] max-w-[900px] mb-2 mt-3 text-balance">
+            Enterpret automatically unifies your customer feedback across all
+            data types and builds adaptive AI models tailored to your feedback
+            architecture, delivering precise and granular insights.
+          </p>
+          <a href="#" class="text-[22px] ms-1 lg:text-[26px] font-semibold hover:gap-5 transition-all duration-300 text-[#7186ff] flex items-center gap-3">Get Started <i class="fa-solid fa-arrow-right mb-[-3px]"></i></a>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="src/js/main.js"></script>
   </body>
 </html>
