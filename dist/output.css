@@ -669,8 +669,8 @@ video {
   margin-bottom: 0.5rem;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
+.mb-24 {
+  margin-bottom: 6rem;
 }
 
 .mb-28 {
@@ -715,10 +715,6 @@ video {
 
 .mt-\[30px\] {
   margin-top: 30px;
-}
-
-.mb-24 {
-  margin-bottom: 6rem;
 }
 
 .flex {
@@ -813,6 +809,18 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[97\%\] {
+  width: 97%;
+}
+
+.w-\[97\.5\%\] {
+  width: 97.5%;
+}
+
+.w-\[97\.\%\] {
+  width: 97.%;
 }
 
 .max-w-\[900px\] {
