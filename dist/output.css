@@ -766,6 +766,10 @@ video {
   height: 100%;
 }
 
+.h-\[80vh\] {
+  height: 80vh;
+}
+
 .w-\[100\%\] {
   width: 100%;
 }
@@ -875,12 +879,36 @@ video {
   gap: 1.25rem;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
 
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .rounded-full {
@@ -1056,6 +1084,10 @@ video {
 
 .pt-\[110px\] {
   padding-top: 110px;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
 }
 
 .text-left {
