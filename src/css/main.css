@@ -12,11 +12,21 @@
 .latter-space-1{
   letter-spacing: 0.1rem;
 }
+.latter-space-2{
+  letter-spacing: 0.2rem;
+}
 @media screen and (min-width: 900px) {
   .container-2 {
     width: 60% !important;
     margin: auto !important;
     max-width: 1200px !important;
+
+  }
+  .hero-section{
+    min-height: 100vh;
+  }
+  .hero-section > .container{
+    min-height:84.5vh;
   }
 
 }
@@ -55,8 +65,8 @@
 .hero-section {
   max-height: auto;
   background-image: url("../assets/hero-bg.webp");
-  background-size: 700px;
-
+  background-size: contain;
+  
   filter: brightn;
   background-repeat: no-repeat;
   background-position: center;
@@ -84,12 +94,12 @@
 
 .swiper-slide {
   flex-shrink: 0;
-  min-width: 150px !important;
   object-fit: contain;
+  transition: all 1s ease;
 }
 
 .swiper-wrapper {
-  transition-timing-function: cubic-bezier(0, 0, 0, 0);
+  transition-timing-function: cubic-bezier(1, 1, 1, 1);
 }
 .slider-container::after {
   content: "";
@@ -119,7 +129,7 @@
   top: 5px;
   left: 0px;
   height: 97%;
-  width: 5px;
+  width: 6px;
   border-radius: 10px;
   background: linear-gradient(
     to bottom,

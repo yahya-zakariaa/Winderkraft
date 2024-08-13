@@ -2,17 +2,25 @@ const toggleMenu = document.querySelector(".toggle-menu");
 const manu = document.querySelector(".sidebar");
 const navbar = document.querySelector(".navbar");
 const swaiper = new Swiper(".swiper", {
-  slidesPerView: 3,
+  slidesPerView: 2,
+  breakpoints: {
+    1024: {
+      slidesPerView: 4,
+    }
+  },
   loop: true,
   speed: 2000,
 
   autoplay: {
     delay: 0,
     disableOnInteraction: false,
-    pauseOnMouseEnter: true,
+    pauseOnMouseEnter: false,
   },
+
+  
   centeredSlides: true,
   spaceBetween: 100,
+
   allowTouchMove: false,
 });
 
