@@ -741,8 +741,8 @@ video {
   height: 60px;
 }
 
-.h-\[83vh\] {
-  height: 83vh;
+.h-\[80vh\] {
+  height: 80vh;
 }
 
 .h-\[85\%\] {
@@ -753,10 +753,6 @@ video {
   height: 89%;
 }
 
-.h-\[89\.5\%\] {
-  height: 89.5%;
-}
-
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -764,10 +760,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[80vh\] {
-  height: 80vh;
 }
 
 .w-\[100\%\] {
@@ -794,16 +786,12 @@ video {
   width: 80%;
 }
 
-.w-\[95\%\] {
-  width: 95%;
+.w-\[97\%\] {
+  width: 97%;
 }
 
-.w-\[96\%\] {
-  width: 96%;
-}
-
-.w-\[98\%\] {
-  width: 98%;
+.w-\[97\.5\%\] {
+  width: 97.5%;
 }
 
 .w-fit {
@@ -813,18 +801,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[97\%\] {
-  width: 97%;
-}
-
-.w-\[97\.5\%\] {
-  width: 97.5%;
-}
-
-.w-\[97\.\%\] {
-  width: 97.%;
 }
 
 .max-w-\[900px\] {
@@ -859,6 +835,10 @@ video {
   gap: 2.5rem;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-14 {
   gap: 3.5rem;
 }
@@ -879,20 +859,8 @@ video {
   gap: 1.25rem;
 }
 
-.gap-12 {
-  gap: 3rem;
-}
-
 .overflow-hidden {
   overflow: hidden;
-}
-
-.overflow-scroll {
-  overflow: scroll;
-}
-
-.overflow-x-auto {
-  overflow-x: auto;
 }
 
 .overflow-y-auto {
@@ -901,14 +869,6 @@ video {
 
 .overflow-x-hidden {
   overflow-x: hidden;
-}
-
-.overflow-x-scroll {
-  overflow-x: scroll;
-}
-
-.overflow-y-scroll {
-  overflow-y: scroll;
 }
 
 .rounded-full {
@@ -1084,10 +1044,6 @@ video {
 
 .pt-\[110px\] {
   padding-top: 110px;
-}
-
-.pb-0 {
-  padding-bottom: 0px;
 }
 
 .text-left {

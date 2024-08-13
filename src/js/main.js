@@ -6,7 +6,8 @@ const swaiper = new Swiper(".swiper", {
   breakpoints: {
     1024: {
       slidesPerView: 4,
-    }
+      spaceBetween: 100,
+    },
   },
   loop: true,
   speed: 2000,
@@ -17,9 +18,8 @@ const swaiper = new Swiper(".swiper", {
     pauseOnMouseEnter: false,
   },
 
-  
   centeredSlides: true,
-  spaceBetween: 100,
+  spaceBetween: 70,
 
   allowTouchMove: false,
 });
