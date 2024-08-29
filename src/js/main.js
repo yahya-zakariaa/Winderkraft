@@ -1,6 +1,7 @@
 const toggleMenu = document.querySelector(".toggle-menu");
 const manu = document.querySelector(".sidebar");
 const navbar = document.querySelector(".navbar");
+const closeMenu = document.querySelector("#close-menu");
 const swaiper = new Swiper(".swiper", {
   slidesPerView: 2,
   breakpoints: {
@@ -20,26 +21,31 @@ const swaiper = new Swiper(".swiper", {
 
   centeredSlides: true,
   spaceBetween: 70,
-
-  allowTouchMove: false,
 });
+new Splide("#testimonials", {
+  type: "loop",
+  breakpoints: {
+    768: {
+      arrows: false,
+      gap: 20,
+    },
+  },
+}).mount();
 
 // handel nav toggle
 toggleMenu.addEventListener("click", () => {
-  console.log("hello");
   manu.classList.toggle("manu-active");
-  toggleMenu.innerHTML = manu.classList.contains("manu-active")
-    ? '<i class="fa-solid fa-xmark text-[24px]"></i>'
-    : '<i class="fa-solid fa-bars-staggered text-[24px]"></i>';
 });
 
 // handel sidebar on blur
 manu.addEventListener("click", (e) => {
-  e.target.classList.contains("manu-active")
-    ? (toggleMenu.innerHTML =
-        '<i class="fa-solid fa-bars-staggered text-[24px]"></i>')
-    : "";
   e.target.classList.remove("manu-active");
+});
+
+// handel close sidebar btn
+
+closeMenu.addEventListener("click", () => {
+  manu.classList.remove("manu-active");
 });
 
 window.addEventListener("scroll", () => {

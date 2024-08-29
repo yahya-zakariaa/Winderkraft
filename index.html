@@ -12,6 +12,11 @@
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet" />
     <link rel="stylesheet" href="dist/output.css" />
     <link rel="stylesheet" href="src/css/main.css" />
     <title>Home</title>
@@ -22,7 +27,12 @@
       class="navbar transition-all duration-300 z-[9999] w-full bg-transparent h-fit overflow-hidden fixed top-0 left-0 right-0 rounded-b-">
       <div
         class="container h-full py-6 flex justify-between items-center text-white px-1 overflow-hidden">
-        <a href="#" class="logo text-[27px] font-bold text-white"><img class="w-[150px] lg:w-[200px]" src="src/assets/nav-logo.webp" alt=""></a>
+        <a href="#" class="logo text-[27px] font-bold text-white"
+          ><img
+            class="w-[150px] lg:w-[200px]"
+            src="src/assets/nav-logo.webp"
+            alt=""
+        /></a>
         <button class="lg:hidden toggle-menu transition-all duration-300">
           <i class="fa-solid fa-bars-staggered text-[24px]"></i>
         </button>
@@ -36,32 +46,32 @@
     </nav>
     <!-- sidebar -->
     <aside
-      class="sidebar w-full transition-all duration-500 mx-[-100%] fixed bottom-0 right-0 h-[80vh] z-[999]">
+      class="sidebar w-full md:hidden transition-all duration-500 mx-[-100%] fixed top-0 right-0 h-screen z-[99999]">
       <div
-        class="manu border border-gray-800 absolute bottom-0 right-0 bg-black bg-opacity-60 pb-10 pt-2 z-[1000] overflow-y-auto rounded-l-xl w-[300px] h-full flex flex-col justify-between items-center">
+        class="manu border pt-[60px] border-gray-800 absolute top-0 right-0 bg-black bg-opacity-60 pb-10 z-[1000] overflow-hidden w-[60%] h-full flex flex-col justify-between items-center">
+        <button
+          id="close-menu"
+          class="text-white text-start absolute top-5 left-5 text-[24px]">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
         <ul class="menu flex justify-between flex-col items-center w-full">
           <li
-            class="border-b transition-all duration-300 cursor-pointer border-gray-800 w-full text-left px-5 py-3 hover:bg-[#2d0241]">
+            class="border-b transition-all duration-300 cursor-pointer border-gray-800 w-full text-center px-5 py-3 hover:bg-[#2d0241]">
             <a href="#" class="font-semibold text-white text-[20px]">Home</a>
           </li>
           <li
-            class="border-b transition-all duration-300 cursor-pointer border-gray-800 w-full text-left px-5 py-3 hover:bg-[#2d0241]">
+            class="border-b transition-all duration-300 cursor-pointer border-gray-800 w-full text-center px-5 py-3 hover:bg-[#2d0241]">
             <a href="#" class="font-semibold text-white text-[20px]"
               >Customer</a
             >
           </li>
           <li
-            class="border-b transition-all duration-300 cursor-pointer border-gray-800 w-full text-left px-5 py-3 hover:bg-[#2d0241]">
+            class="border-b transition-all duration-300 cursor-pointer border-gray-800 w-full text-center px-5 py-3 hover:bg-[#2d0241]">
             <a href="#" class="font-semibold text-white text-[20px]">Insight</a>
           </li>
           <li
-            class="border-b transition-all duration-300 cursor-pointer border-gray-800 w-full text-left px-5 py-3 hover:bg-[#2d0241]">
+            class="border-b transition-all duration-300 cursor-pointer border-gray-800 w-full text-center px-5 py-3 hover:bg-[#2d0241]">
             <a href="#" class="font-semibold text-white text-[20px]">Pricing</a>
-          </li>
-          <li class="w-full text-left px-5 py-3 hover:bg-[#2d0241]">
-            <a href="#" class="font-semibold text-white text-[20px]"
-              >Changelog</a
-            >
           </li>
         </ul>
         <div
@@ -131,39 +141,48 @@
               <img
                 class="swiper-slide"
                 src="src/assets/slider-1.png"
-                alt="slider img" />
+                alt="slider img"
+                loading="lazy" />
               <img
                 class="swiper-slide"
                 src="src/assets/slider-2.svg"
-                alt="slider img" />
+                alt="slider img"
+                loading="lazy" />
               <img
                 class="swiper-slide"
                 src="src/assets/slider-3.webp"
-                alt="slider img" />
+                alt="slider img"
+                loading="lazy" />
               <img
                 class="swiper-slide"
                 src="src/assets/slider-4.webp"
-                alt="slider img" />
+                alt="slider img"
+                loading="lazy" />
               <img
                 class="swiper-slide"
                 src="src/assets/slider-6.webp"
-                alt="slider img" />
+                alt="slider img"
+                loading="lazy" />
               <img
                 class="swiper-slide"
                 src="src/assets/slider-7.svg"
-                alt="slider img" />
+                alt="slider img"
+                loading="lazy" />
               <img
                 class="swiper-slide"
                 src="src/assets/slider-8.svg"
-                alt="slider img" />
+                alt="slider img"
+                loading="lazy" />
               <img
                 class="swiper-slide"
                 src="src/assets/slider-9.svg"
-                alt="slider img" />
+                alt="slider img"
+                loading="lazy" />
               <img
                 class="swiper-slide"
                 src="src/assets/slider-10.svg"
-                alt="slider img" />
+                alt="slider img"
+                loading="lazy" />
             </div>
           </div>
         </div>
@@ -204,7 +223,7 @@
       </div>
       <div class="container relative pb-16 lg:pb-20">
         <div
-          class="feedback-1 flex gap-14 lg:gap-0 lg:flex-row flex-col justify-between lg:items-start items-center lg:mb-28 mb-24 mt-14 lg:mt-[100px]">
+          class="feedback-1 flex gap-10 lg:gap-0 lg:flex-row flex-col justify-between lg:items-start items-center lg:mb-28 mb-32 mt-24 md:mt-14 lg:mt-[100px]">
           <div class="content w-full lg:w-[40%] order-3 lg:order-1 lg:pt-4">
             <h5
               class="text-[#7186ff] latter-space-2 text-[14px] font-medium mb-4 uppercase">
@@ -226,7 +245,8 @@
                   width="60px"
                   height="60px"
                   src="src/assets/customer-avater-1.png"
-                  alt="" />
+                  alt="customer-photo "
+                  loading="lazy" />
               </div>
               <p class="content text-white">
                 <span class="font-bold text-[16px]">Jesse Walker</span> <br />
@@ -238,25 +258,32 @@
                 <img
                   width="90px"
                   src="src/assets/customer-1-company.webp"
-                  alt="company logo 'canva' " />
+                  alt="company logo 'canva' "
+                  loading="lazy" />
               </div>
             </div>
-            <div
-              class="link bg-gradient-to-r hover:[&>a]:w-[90%] group from-[#7186ff] to-[#fe7587] w-[350px] h-[60px] flex overflow-hidden justify-center items-center mx-auto rounded-full">
-              <a
-                href="#"
-                class="bg-[#141219] text-white w-[97.5%] h-[89%] text-center rounded-full flex items-center justify-center font-medium transition-all duration-300 text-[18px] lg:text-[17px]">
-                Read the Canva customer story
-              </a>
+            <div class="flex items-center mx-auto w-[90%]">
+
+              <div
+                class="link bg-gradient-to-r  hover:[&>a]:w-[90%] group from-[#7186ff] to-[#fe7587] w-[350px] h-[60px] flex overflow-hidden justify-center items-center mx-auto rounded-full">
+                <a
+                  href="#"
+                  class="bg-[#141219] text-white w-[97.5%] h-[89%] text-center rounded-full flex items-center justify-center font-medium transition-all duration-300 text-[18px] lg:text-[17px]">
+                  Read the Canva customer story
+                </a>
+              </div>
             </div>
           </div>
           <div
             class="img w-full lg:w-[55%] order-1 lg:order-3 flex items-center justify-center lg:justify-end">
-            <img src="src/assets/customer-sec-1.webp" alt="" />
+            <img
+              src="src/assets/customer-sec-1.webp"
+              alt="img"
+              loading="lazy" />
           </div>
         </div>
         <div
-          class="feedback-2 flex gap-10 lg:gap-0 lg:flex-row flex-col justify-between lg:items-start items-center mb-24 lg:mb-14 mt-[0px]">
+          class="feedback-2 flex gap-10 lg:gap-0 lg:flex-row flex-col justify-between lg:items-start items-center mb-32 lg:mb-14 mt-[0px]">
           <div class="content w-full lg:w-[40%] order-3 lg:pt-1">
             <h5
               class="text-[#7186ff] latter-space-2 text-[14px] font-medium mb-4 uppercase">
@@ -276,7 +303,8 @@
                   width="60px"
                   height="60px"
                   src="src/assets/customer-avater-2.jpeg"
-                  alt="" />
+                  alt="customer-photo"
+                  loading="lazy" />
               </div>
               <p class="content text-white">
                 <span class="font-bold text-[16px]">Emma Auscher, </span> <br />
@@ -288,25 +316,29 @@
                 <img
                   width="100px"
                   src="src/assets/customer-2-company.svg"
-                  alt="company logo 'canva' " />
+                  alt="company logo 'Notion' "
+                  loading="lazy" />
               </div>
             </div>
-            <div
-              class="link bg-gradient-to-r hover:[&>a]:w-[90%] group from-[#7186ff] to-[#fe7587] w-[350px] h-[60px] flex overflow-hidden justify-center items-center mx-auto rounded-full">
-              <a
-                href="#"
-                class="bg-[#141219] text-white w-[97.5%] h-[89%] text-center rounded-full flex items-center justify-center font-medium transition-all duration-300 text-[18px] lg:text-[17px]">
-                Read the Notion customer story
-              </a>
+            <div class="w-90% flex mx-auto items-center">
+
+              <div
+                class="link bg-gradient-to-r  hover:[&>a]:w-[90%] group from-[#7186ff] to-[#fe7587] w-[350px] h-[60px] flex overflow-hidden justify-center items-center mx-auto rounded-full">
+                <a
+                  href="#"
+                  class="bg-[#141219] text-white w-[97.5%] h-[89%] text-center rounded-full flex items-center justify-center font-medium transition-all duration-300 text-[18px] lg:text-[17px]">
+                  Read the Notion customer story
+                </a>
+              </div>
             </div>
           </div>
           <div
             class="img w-full lg:w-[55%] order-1 flex items-center justify-center lg:justify-end">
-            <img src="src/assets/customer-sec-2.png" alt="" />
+            <img src="src/assets/customer-sec-2.png" alt="img" loading="lazy" />
           </div>
         </div>
         <div
-          class="feedback-3 flex gap-12 lg:gap-0 lg:flex-row flex-col justify-between lg:items-start items-center lg:mb-0">
+          class="feedback-3 flex gap-10 lg:gap-0 lg:flex-row flex-col justify-between lg:items-start items-center lg:mb-0">
           <div class="content w-full lg:w-[40%] order-3 lg:order-1 lg:pt-4">
             <h5
               class="text-[#7186ff] latter-space-2 text-[14px] font-medium mb-4 uppercase">
@@ -326,7 +358,8 @@
                   width="60px"
                   height="60px"
                   src="src/assets/customer-avater-3.jpeg"
-                  alt="" />
+                  alt="customer-photo"
+                  loading="lazy" />
               </div>
               <p class="content text-white">
                 <span class="font-bold text-[14px]">Abishek Viswanthan,</span>
@@ -337,21 +370,28 @@
                 <img
                   width="110px"
                   src="src/assets/cusomer-3-company.svg"
-                  alt="company logo 'canva' " />
+                  alt="company logo 'Apollo' "
+                  loading="lazy" />
               </div>
             </div>
-            <div
-              class="link bg-gradient-to-r hover:[&>a]:w-[90%] group from-[#7186ff] to-[#fe7587] w-[350px] h-[60px] flex overflow-hidden justify-center items-center mx-auto rounded-full">
-              <a
-                href="#"
-                class="bg-[#141219] text-white w-[97.5%] h-[89%] text-center rounded-full flex items-center justify-center font-medium transition-all duration-300 text-[18px] lg:text-[17px]">
-                Read the Apollo customer story
-              </a>
+            <div class="w-90% flex mx-auto items-center">
+
+              <div
+                class="link bg-gradient-to-r hover:[&>a]:w-[90%] group from-[#7186ff] to-[#fe7587] w-[350px] h-[60px] flex overflow-hidden justify-center items-center mx-auto rounded-full">
+                <a
+                  href="#"
+                  class="bg-[#141219] text-white w-[97.5%] h-[89%] text-center rounded-full flex items-center justify-center font-medium transition-all duration-300 text-[18px] lg:text-[17px]">
+                  Read the Apollo customer story
+                </a>
+              </div>
             </div>
           </div>
           <div
             class="img w-full lg:w-[55%] order-1 lg:order-3 flex items-center justify-center lg:justify-end">
-            <img src="src/assets/customer-sec-3.webp" alt="" />
+            <img
+              src="src/assets/customer-sec-3.webp"
+              alt="img"
+              loading="lazy" />
           </div>
         </div>
         <div
@@ -590,8 +630,150 @@
           class="line absolute left-0 right-0 bottom-0 h-[1px] lg:w-[70%] w-[100%] bg-gray-800 mx-auto"></div>
       </div>
     </section>
-
+    <!-- testimonial slider -->
+    <section class="testimonial-slider-section">
+      <div class="container relative py-20">
+        <div id="testimonials" class="splide w-full md:p-16 py-14 relative">
+          <div class="splide__track  mx-auto ">
+            <ul class="splide__list ">
+              <li class="splide__slide px-4 md:px-4 lg:px-10 ">
+                <div
+                class="customer-1 w-full swiper-slide flex flex-col items-center text-center">
+                <div
+                  class="company-logo mb-[25px] flex items-center justify-center w-full">
+                  <img
+                    src="src/assets/slider-4.webp"
+                    class="w-[150px]"
+                    alt="company-logo"
+                    loading="lazy" />
+                </div>
+                <div class="content mb-10 md:mb-[25px]">
+                  <p class="text-white text-[16px] lg:text-[20px] line-height-2">
+                    We are laser-focused on giving customers more than they expect
+                    through a hospitality-first, individualized approach to drive
+                    retention and loyalty. Enterpret has allowed us to stitch
+                    together a full picture of the customer, including feedback
+                    and reviews from multiple data points. We now can super-serve
+                    our loyal customers in a way that we have never been able to
+                    before.
+                  </p>
+                </div>
+                <div
+                  class="customer-details  flex justify-center items-center gap-4">
+                  <div class="customer-photo w-fit">
+                    <img
+                      src="src/assets/customer-avatar-8.jpeg"
+                      class="w-[60px] h-[50px] md:w-[70px] md:h-[70px] rounded-full"
+                      alt="testimonial img"
+                      loading="lazy" />
+                  </div>
+                  <div class="customer-content w-fit text-start">
+                    <h4 class="name text-[16px] w-fit lg:text-[20px] text-white">
+                      Anna Esrov
+                    </h4>
+                    <p class="company-name w-fit text-white ">
+                      Vice President of Customer Experience & Loyalty
+                    </p>
+                  </div>
+                </div>
+              </div>
+              </li>
+              <li class="splide__slide px-4 md:px-4 lg:px-10 ">
+                <div
+                class="customer-1 w-full swiper-slide flex flex-col items-center text-center">
+                <div
+                  class="company-logo mb-[25px] flex items-center justify-center w-full">
+                  <img
+                    src="src/assets/slider-4.webp"
+                    class="w-[150px]"
+                    alt="company-logo"
+                    loading="lazy" />
+                </div>
+                <div class="content mb-10 md:mb-[25px]">
+                  <p class="text-white text-[16px] lg:text-[20px] line-height-2">
+                    We are laser-focused on giving customers more than they expect
+                    through a hospitality-first, individualized approach to drive
+                    retention and loyalty. Enterpret has allowed us to stitch
+                    together a full picture of the customer, including feedback
+                    and reviews from multiple data points. We now can super-serve
+                    our loyal customers in a way that we have never been able to
+                    before.
+                  </p>
+                </div>
+                <div
+                  class="customer-details  flex justify-center items-center gap-4">
+                  <div class="customer-photo w-fit">
+                    <img
+                      src="src/assets/customer-avatar-8.jpeg"
+                      class="w-[60px] h-[50px] md:w-[70px] md:h-[70px] rounded-full"
+                      alt="testimonial img"
+                      loading="lazy" />
+                  </div>
+                  <div class="customer-content w-fit text-start">
+                    <h4 class="name text-[16px] w-fit lg:text-[20px] text-white">
+                      Anna Esrov
+                    </h4>
+                    <p class="company-name w-fit text-white ">
+                      Vice President of Customer Experience & Loyalty
+                    </p>
+                  </div>
+                </div>
+              </div>
+              </li>
+              <li class="splide__slide px-4 md:px-4 lg:px-10 ">
+                <div
+                class="customer-1 w-full swiper-slide flex flex-col items-center text-center">
+                <div
+                  class="company-logo mb-[25px] flex items-center justify-center w-full">
+                  <img
+                    src="src/assets/slider-4.webp"
+                    class="w-[150px]"
+                    alt="company-logo"
+                    loading="lazy" />
+                </div>
+                <div class="content mb-10 md:mb-[25px]">
+                  <p class="text-white text-[16px] lg:text-[20px] line-height-2">
+                    We are laser-focused on giving customers more than they expect
+                    through a hospitality-first, individualized approach to drive
+                    retention and loyalty. Enterpret has allowed us to stitch
+                    together a full picture of the customer, including feedback
+                    and reviews from multiple data points. We now can super-serve
+                    our loyal customers in a way that we have never been able to
+                    before.
+                  </p>
+                </div>
+                <div
+                  class="customer-details  flex justify-center items-center gap-4">
+                  <div class="customer-photo w-fit">
+                    <img
+                      src="src/assets/customer-avatar-8.jpeg"
+                      class="w-[60px] h-[50px] md:w-[70px] md:h-[70px] rounded-full"
+                      alt="testimonial img"
+                      loading="lazy" />
+                  </div>
+                  <div class="customer-content w-fit text-start">
+                    <h4 class="name text-[16px] w-fit lg:text-[20px] text-white">
+                      Anna Esrov
+                    </h4>
+                    <p class="company-name w-fit text-white ">
+                      Vice President of Customer Experience & Loyalty
+                    </p>
+                  </div>
+                </div>
+              </div>
+              </li>
+             
+             
+            </ul>
+          </div>
+        </div>
+    </section>
+       <!-- Slides -->
+      
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
     <script src="src/js/main.js"></script>
   </body>
 </html>
